@@ -1,0 +1,1 @@
+apt-get update -y && apt-get install cmake make -y && git clone https://github.com/ethereum-mining/ethminer.git ethminer && cd ethminer && git submodule update --init --recursive && mkdir build; cd build && cmake .. && cmake --build . && make install
